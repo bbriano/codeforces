@@ -1,1 +1,2 @@
-cat in | ./a.out | diff - out
+#!/usr/bin/env bash
+g++ $1 && cat <(echo IN) in <(echo OUT) out <(echo GOT) <(cat in | ./a.out)
