@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-g++ $1 && cat in | ./a.out
+g++ -std=c++11 $1 && cat in | ./a.out
