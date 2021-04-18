@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-g++ -std=c++11 $1 && cat in | ./a.out
+g++ -std=c++11 -include-pch bits/stdc++.h.gch $1 && cat in | ./a.out
